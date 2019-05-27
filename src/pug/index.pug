@@ -3,6 +3,7 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     link(rel="stylesheet", href="./assets/css/app.css")
     title Conectar
   
@@ -27,20 +28,24 @@ html(lang="en")
           p EDIT PROFILE
         .section__profile
           .section__profile-details
+            img(class="pen-image" src="assets/img/pen.svg", alt="")
+            .section__profile-picture
+              img(class="pen-image" src="assets/img/pen.svg", alt="")
+
           .section__profile-form
-            .input-left First Name
-            .input-right Last Name
+            input(type="text" placeholder="First Name").input-left
+            input(type="text" placeholder="Last Name").input-right 
           .section__profile-form
-            .input-left @Username
-            .input-right Email Address
+            input(type="text" placeholder="@Username").input-left 
+            input(type="text" placeholder="Email Address").input-right 
           .section__profile-form
-            .input-left Phone Number
-            .input-right Nationality
+            input(type="text" placeholder="Phone Number").input-left 
+            input(type="text" placeholder="Nationality").input-right 
           .section__profile-form
-            .input-left Country of Residence
-            .input-right State/ City of Residence
+            input(type="text" placeholder="Country of Residence").input-left 
+            input(type="text" placeholder="State/City of Residence").input-right 
           .section__profile-form
-            .input-left Timezone of Location
+            input(type="text" placeholder="Timezone of Location").input-left 
           .section__profile-button
             .button-secondary SAVE CHANGES  
       

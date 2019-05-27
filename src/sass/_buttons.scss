@@ -3,19 +3,19 @@
   height: rem-calc(37.5);
   color: white;
   background: #ff227c;
-  padding: 1rem;
+  padding: 0.5rem;
   text-transform: uppercase;
   text-align: center;
   border-radius: 35px;
   border: 2px solid #e7e6e7;
   font-weight: bold;
   outline: none;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   border: 0;
   cursor: pointer;
 
   &:hover {
-    color: black;
+    color: #fab018;
   }
 }
 
