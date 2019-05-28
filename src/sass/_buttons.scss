@@ -1,6 +1,6 @@
 %button {
   width: rem-calc(125);
-  height: rem-calc(37.5);
+  // height: rem-calc(37.5);
   color: white;
   background: #ff227c;
   padding: 0.5rem;
@@ -21,12 +21,13 @@
 
 .button-primary {
   @extend %button;
+  box-shadow: 0px 5px 10px rgba(234, 71, 138, 0.3);
   border: 0;
 }
 
 .button-secondary {
   @extend %button;
-  width: 11%;
+  // width: 11%;
   margin: 0 auto;
   box-shadow: 0px 10px 25px rgba(234, 71, 138, 0.5);
 }

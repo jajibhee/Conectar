@@ -21,7 +21,7 @@
           <li>Putahs</li>
         </ul>
         <div class="header__nav-button"> 
-          <div class="button-primary">classroom</div>
+          <button class="button-primary">classroom</button>
         </div>
       </div>
     </header>
@@ -32,7 +32,15 @@
         </div>
         <div class="section__profile">
           <div class="section__profile-details"><img class="pen-image" src="assets/img/pen.svg" alt=""/>
-            <div class="section__profile-picture"><img class="pen-image" src="assets/img/pen.svg" alt=""/></div>
+            <div class="section__profile-picture">
+              <div class="pen"><img class="pen-image" src="assets/img/pen.svg" alt=""/>
+                <div class="tooltip">
+                  <p>UPLOAD PICTURE</p>
+                  <p>TAKE A PICTURE</p>
+                  <p>DELETE A PICTURE</p>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="section__profile-form">
             <input class="input-left" type="text" placeholder="First Name"/>
@@ -44,14 +52,22 @@
           </div>
           <div class="section__profile-form">
             <input class="input-left" type="text" placeholder="Phone Number"/>
-            <input class="input-right" type="text" placeholder="Nationality"/>
+            <select class="input-left">
+              <option value="Nationality">Nationality</option>
+            </select>
           </div>
           <div class="section__profile-form">
-            <input class="input-left" type="text" placeholder="Country of Residence"/>
-            <input class="input-right" type="text" placeholder="State/City of Residence"/>
+            <select class="input-left">
+              <option value="Nationality">Country of Residence</option>
+            </select>
+            <select class="input-right"> 
+              <option value="Nationality">State/City of Residence</option>
+            </select>
           </div>
           <div class="section__profile-form">
-            <input class="input-left" type="text" placeholder="Timezone of Location"/>
+            <select class="input-left">
+              <option value="Nationality">Timezone of Location</option>
+            </select>
           </div>
           <div class="section__profile-button">
             <div class="button-secondary">SAVE CHANGES  </div>

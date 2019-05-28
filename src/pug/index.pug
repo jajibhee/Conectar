@@ -20,7 +20,7 @@ html(lang="en")
           li English
           li Putahs
         .header__nav-button 
-          .button-primary classroom
+          button.button-primary classroom
       
     section
       .section
@@ -30,8 +30,12 @@ html(lang="en")
           .section__profile-details
             img(class="pen-image" src="assets/img/pen.svg", alt="")
             .section__profile-picture
-              img(class="pen-image" src="assets/img/pen.svg", alt="")
-
+              .pen
+                img(class="pen-image" src="assets/img/pen.svg", alt="")
+                .tooltip
+                  p UPLOAD PICTURE
+                  p TAKE A PICTURE
+                  p DELETE A PICTURE
           .section__profile-form
             input(type="text" placeholder="First Name").input-left
             input(type="text" placeholder="Last Name").input-right 
@@ -40,12 +44,16 @@ html(lang="en")
             input(type="text" placeholder="Email Address").input-right 
           .section__profile-form
             input(type="text" placeholder="Phone Number").input-left 
-            input(type="text" placeholder="Nationality").input-right 
+            select.input-left
+              option(value="Nationality") Nationality
           .section__profile-form
-            input(type="text" placeholder="Country of Residence").input-left 
-            input(type="text" placeholder="State/City of Residence").input-right 
+            select.input-left
+              option(value="Nationality") Country of Residence
+            select.input-right  
+              option(value="Nationality") State/City of Residence
           .section__profile-form
-            input(type="text" placeholder="Timezone of Location").input-left 
+            select.input-left
+              option(value="Nationality") Timezone of Location
           .section__profile-button
             .button-secondary SAVE CHANGES  
       
