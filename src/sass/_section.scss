@@ -1,7 +1,6 @@
 section {
   background-color: #f0f4f7;
   position: relative;
-  height: 100vh;
 }
 
 .section {
@@ -107,7 +106,7 @@ input[type="text"] {
 .pen {
   .pen-image {
     position: absolute;
-    top: 5%;
+    top: 60%;
     right: 2%;
     width: 1rem;
     height: 1rem;
@@ -133,8 +132,10 @@ select {
 
   background-color: #fff;
   background: url(../img/arrow.svg);
-  background-repeat: no-repeat;
-  background-position: right center;
+  background-repeat: no-repeat, repeat;
+  //please help with the sizing of this thing, the arrow's position changes on mobile
+  background-position: right 0.7em top 30%, 0 0;
+  background-size: 0.65em auto, 100%;
 }
 
 //tooltip
@@ -147,7 +148,7 @@ select {
   top: 5rem;
   left: 5rem;
   z-index: 1;
-  // padding: 1rem;
+  cursor: pointer;
   text-align: left;
   border-radius: 4px;
   width: 200%;
@@ -161,5 +162,49 @@ select {
   }
   p:last-child() {
     border-bottom: none;
+  }
+}
+
+//Media Queries
+@media (max-width: 760px) {
+  .header {
+    padding: 2.5rem 2.5rem;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__logo {
+    height: 1rem;
+  }
+  .section__profile {
+    // width: 100%;
+    width: 300px;
+    // height: 200px;
+    // padding: 2rem;
+  }
+
+  .section__profile-form .input-left,
+  .section__profile-form .input-right {
+    width: 100%;
+    padding-top: 3rem;
+    text-align: center;
+  }
+  .section__profile-form {
+    margin-top: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: block;
+  }
+  .input-left,
+  .input-right {
+    width: 100%;
+  }
+  .section__profile-picture {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .section__edit p {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
