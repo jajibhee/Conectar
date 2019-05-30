@@ -98,7 +98,6 @@ section {
 input[type="text"] {
   border: none;
   color: #999999;
-
   outline: none;
   font-size: 1rem;
   padding: 0.2rem;
@@ -177,12 +176,13 @@ select {
     height: 1rem;
   }
   .section__profile {
-    // width: 100%;
     width: 300px;
-    // height: 200px;
-    // padding: 2rem;
   }
-
+  select {
+    //please help with the sizing of this thing, the arrow's position changes on mobile
+    background-position: right 0.7em top 85%, 0 0;
+    background-size: 0.65em auto, 100%;
+  }
   .section__profile-form .input-left,
   .section__profile-form .input-right {
     width: 100%;
